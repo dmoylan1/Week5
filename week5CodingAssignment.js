@@ -115,6 +115,13 @@ class Menu {
         }
     }
 
+    deleteStudent() {
+        let index = prompt('Enter the prompt of the student to delete:');
+        if (index > -1 && index < this.students.length) {
+            this.students.splice(index, 1);
+        }
+    }
+
     createAssignment() {
         let name = prompt('Enter name of new assignment:');
         let score = prompt(`Enter student's score on assignment:`)
