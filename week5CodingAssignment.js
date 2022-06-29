@@ -1,3 +1,12 @@
+// Assignment Requirements
+// 1.	Create a menu app as seen in this week’s video. What you create is up to you as long as it 
+// meets the following requirements.
+// a.	Use at least one array.
+// b.	Use at least two classes.
+// c.	Your menu should have the options to create, view, and delete elements.
+
+
+// REQUIRED CLASSES
 class Assignment {
     constructor(name, score) {
         this.name = name;
@@ -12,14 +21,16 @@ class Assignment {
 class Student {
     constructor(name) {
     this.name = name;
-    this.assignments = [];
+    this.assignments = []; 
+    //REQUIRED ARRAY
 }
 
 addAssignment(assignment) {
     if (assignment instanceof Assignment) {
         this.assignments.push(assignment);
     } else {
-        throw new Error(`You an only add an instance of Assignment. Argument is not an assignment: ${assignment}`)
+        throw new Error(`You an only add an instance of Assignment. 
+        Argument is not an assignment: ${assignment}`)
     }
 }
 
@@ -31,6 +42,7 @@ describe() {
 class Menu {
     constructor() {
         this.students = [];
+        //ARRAY
         this.selectedStudent = null;
     }
 
