@@ -62,6 +62,7 @@ class Menu {
 
     showMainMenuOptions() {
         return prompt(`
+       Grade Book Options:
         0) Exit
         1) Add Student
         2) View Student
